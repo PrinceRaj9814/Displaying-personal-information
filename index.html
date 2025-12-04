@@ -2,46 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Displaying Personal Information</title>
+    <title>Personal Information</title>
+
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+
         }
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: white;
-            margin: 40px;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: antiquewhite;
+            padding: 50px 10px;
+            color: #333;
         }
 
         .container {
-            max-width: 600px;
+            max-width: 650px;
             margin: auto;
-            background: lightblue;
-            padding: 20px 25px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background: #e3f4ff;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
         }
 
         h1 {
             text-align: center;
-            color: #333;
+            margin-bottom: 25px;
+            font-size: 28px;
+            color: #2c3e50;
         }
 
-        ul {
-            background-color: lightblue;
-            padding: 15px;
-            border-radius: 10px;
-            list-style-type: none;
-        }
-
-        li {
-            margin: 10px 0;
+        .info{
+            margin: 15px 0;
             font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
         }
 
-        li span {
+        span {
             font-weight: bold;
+            color: #1e3d59;
+            text-align: center;
+        }
+
+        .education{
+            margin-top: 10px;
+            background: #d9ecff;
+            padding: 12px;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -49,34 +60,34 @@
 
     <div class="container">
         <h1>Personal Information</h1>
-        <ul>
-            <li>
-                <span>Full Name:</span> Prince Raj
-            </li>
 
-            <li>
-                <span> MSU ID:</span> 251810700166
-            </li>
+        <div class="info">
+            <span>Full Name:</span> Prince Raj
+        </div>
 
-            <li>
-                <span>Age:</span> 20
-            </li>
+        <div class="info">
+            <span>MSU ID:</span> 251810700166
+        </div>
 
-            <li>
-                <span>Address:</span> Road no. 24M, Ram Nihora Ray Path, Rajeev Nagar, Patna, Bihar, India - 800024
-            </li>
+        <div class="info">
+            <span>Age:</span> 20
+        </div>
 
-            <li>
-                <span>Educational Background:</span>
-                <p>
-                    I am currently pursuing a <span>Bachelor of Tech (B.Tech)</span> at 
-                    <span>Medhavi Skills University</span>. I completed my higher secondary education 
-                    from Jeewan Public School with a focus on Science subjects. I am interested in 
-                    <span>web development</span>, <span>programming</span>, and <span> improving my technical skills.</span>
-                </p>
-            </li>
-        </ul>
+        <div class="info">
+            <span>Address:</span> Road no. 24M, Ram Nihora Ray Path, Rajeev Nagar, Patna, Bihar, India - 800024
+        </div>
 
+        <div class="info">
+            <span>Educational Background:</span>
+            <div class="education">
+                I am currently pursuing a <span class="highlight">Bachelor of Technology (B.Tech)</span> at 
+                <span>Medhavi Skills University</span>. I completed my higher secondary education from 
+                <span>Jeewan Public School</span> with a focus on Science. I am passionate about 
+                <span>web development</span>, 
+                <span>programming</span>, and consistently 
+                <span>enhancing my technical skills</span>.
+            </div>
+        </div>
     </div>
 
 </body>
