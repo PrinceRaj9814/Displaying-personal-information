@@ -1,94 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Personal Information</title>
+<meta charset="UTF-8">
+<title>Personal Profile Card</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        }
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#bae6fd,#e0f2fe,#f0f9ff);
+}
 
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background-color: antiquewhite;
-            padding: 50px 10px;
-            color: #333;
-        }
+.profile-card{
+    width: 850px;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
 
-        .container {
-            max-width: 650px;
-            margin: auto;
-            background: #e3f4ff;
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
-        }
+.header{
+    background: linear-gradient(90deg, #1e90ff, #0066cc, #004a99);
+    color: white;
+    padding: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 25px;
-            font-size: 28px;
-            color: #2c3e50;
-        }
+.content{
+    display: flex;
+    padding: 25px;
+    gap: 25px;
+    background-color: #f0f8ff;
+}
 
-        .info{
-            margin: 15px 0;
-            font-size: 18px;
-            line-height: 1.6;
-            text-align: center;
-        }
+.profile-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 4px solid #1e90ff;
+}
 
-        span {
-            font-weight: bold;
-            color: #1e3d59;
-            text-align: center;
-        }
+.details h2{
+    color: #1e3d59;
+    margin-bottom: 10px;
+}
 
-        .education{
-            margin-top: 10px;
-            background: #d9ecff;
-            padding: 12px;
-            border-radius: 8px;
-        }
-    </style>
+.details p{
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.details span{
+    font-weight: bold;
+    color: #1e3d59;
+}
+
+.education{
+    margin-top: 15px;
+    background: #eaf5ff;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: #f1f1f1;
+}
+
+</style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Personal Information</h1>
+<div class="profile-card">
 
-        <div class="info">
-            <span>Full Name:</span> Prince Raj
+    <div class="header">
+        Prince Raj
+    </div>
+
+    <div class="content">
+
+        <div class="profile-img">
+            <img src="img9.png" alt="Profile Image">
         </div>
 
-        <div class="info">
-            <span>MSU ID:</span> 251810700166
-        </div>
+        <div class="details">
+            <h2>B.Tech Student</h2>
 
-        <div class="info">
-            <span>Age:</span> 20
-        </div>
+            <p><span>MSU ID:</span> 251810700166</p>
+            <p><span>Age:</span> 20</p>
+            <p><span>Location:</span> Patna, Bihar, India</p>
 
-        <div class="info">
-            <span>Address:</span> Road no. 24M, Ram Nihora Ray Path, Rajeev Nagar, Patna, Bihar, India - 800024
-        </div>
-
-        <div class="info">
-            <span>Educational Background:</span>
             <div class="education">
-                I am currently pursuing a <span class="highlight">Bachelor of Technology (B.Tech)</span> at 
-                <span>Medhavi Skills University</span>. I completed my higher secondary education from 
-                <span>Jeewan Public School</span> with a focus on Science. I am passionate about 
-                <span>web development</span>, 
-                <span>programming</span>, and consistently 
-                <span>enhancing my technical skills</span>.
+                <p>
+                    Pursuing <span>Bachelor of Technology (B.Tech)</span> at  
+                    <span>Medhavi Skills University</span>.  
+                    Completed higher secondary education from  
+                    <span>Jeewan Public School</span>.  
+                    Passionate about <span>Web Development</span> and <span>Programming</span>.
+                </p>
             </div>
         </div>
+
     </div>
+
+    <div class="footer">
+        <a href="https://github.com/PrinceRaj9814"><i class="fab fa-github fa-sm"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-sm"></i></a>
+        <a href="#"><i class="fab fa-x-twitter fa-sm"></i></a>
+        <a href="https://www.linkedin.com/in/princeraj9814/"><i class="fab fa-linkedin-in fa-sm"></i></a>
+        <a href="https://www.youtube.com/@StatusSingerPR"><i class="fab fa-youtube fa-sm"></i></a>
+    </div>
+
+</div>
 
 </body>
 </html>
